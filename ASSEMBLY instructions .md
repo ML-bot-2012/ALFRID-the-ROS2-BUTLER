@@ -348,20 +348,13 @@ Connect the wires to the designated pins
 - [List other components]
 
 **Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
+1. Slide the Box into the hole in the Chassis Top Frame
 
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
 
-**Time Estimate:** [X minutes]
 
----
 
 ### Step 6.5: Connect Servo to Pi3B+
-**Description:** [Your description here]
+
 **Wiring:**
 GPIO 21 → Servo PWM Signal
 5V → Servo Power
