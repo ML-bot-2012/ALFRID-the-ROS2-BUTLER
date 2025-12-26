@@ -135,6 +135,7 @@ GPIO 22 = PWM Speed (ENB)
 
 
 ---
+## Part 3: Encoders
 
 ### Step 3.1: Connect Encoder Wires
 **Wiring:**
@@ -166,60 +167,34 @@ GREEN = ENCODER B
 YELLOW = ENCODER A
 ---
 
-## Part 4: RPLidar Installation
-**Components:**
-- RPLidar mounting bracket
-- [List other components]
 
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
-
----
+## Part 4: RPlidar Installation
 
 ### Step 4.2: Attach RPLidar A1
-**Description:** [Your description here]
 **Components:**
 - RPLidar A1
-- [List other components]
-
+- 3D Printed Mount
+- 4xM2 16mm screws
 **Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
+1. Line up the Lidar's Black standoffs to the Mount and screw it in via the M2 screws
+
+
+2.
+
+ 
+ <img width="446" height="482" alt="Screenshot 2025-12-26 at 1 23 19 AM" src="https://github.com/user-attachments/assets/c109137d-482c-426c-a41a-a3ad813c77d8" />
+
+
+3.
+
+
+<img width="789" height="253" alt="Screenshot 2025-12-26 at 1 25 49 AM" src="https://github.com/user-attachments/assets/2ca38b7e-79cd-4e14-a48e-96bdc00d86e2" />
+
+
+
 
 **Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
-
----
-
-### Step 4.3: Connect RPLidar USB
-**Description:** [Your description here]
-**Components:**
-- USB-C cable
-- [List other components]
-
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
-
+- Phillips Head Screwdriver
 ---
 
 ## Part 5: Electronics & Wiring
@@ -229,9 +204,7 @@ YELLOW = ENCODER A
 - Pi5 protective case
 - Pi3B/3B+ protective case
 **Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
+1. 
 
 **Tools Needed:**
 - [Tool 1]
