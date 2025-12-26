@@ -165,6 +165,11 @@ RED = positive
 WHITE = negative
 GREEN = ENCODER B
 YELLOW = ENCODER A
+After you connected all of the data pins please connect the Blue wire to an external power supply like a 5V breadboard power supply and Black wire to the GND of the Rasberry Pi 3B and breadboard power supply:
+
+
+<img width="275" height="183" alt="image" src="https://github.com/user-attachments/assets/63ea2612-09cf-4338-ac20-44b2951fc2e7" />
+
 ---
 
 
@@ -229,6 +234,8 @@ GPIO 6 (Left PWM) → L298N ENA
 GPIO 23 (Right FWD) → L298N IN3
 GPIO 24 (Right BCK) → L298N IN4
 GPIO 22 (Right PWM) → L298N ENB
+For negative terminal on L298N please connect the 12v battery GND to Pi3B GND to create a common ground.
+(‼️ without it, the motors will not work)
 
 **Instructions:**
 1. Wire it up accordingly
