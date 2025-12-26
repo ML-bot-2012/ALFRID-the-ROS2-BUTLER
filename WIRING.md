@@ -1,4 +1,6 @@
 # ALFRID Wiring Diagram
+## YES NO BUTTONS
+
 
 ## L298N Motor Driver Connections
 
