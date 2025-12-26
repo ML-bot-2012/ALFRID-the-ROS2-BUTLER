@@ -9,7 +9,7 @@ Built on ROS2 with dual Raspberry Pi architecture, ALFRID autonomously explores 
 - **Main Computer**: Raspberry Pi 5 (Ubuntu 22.04 Jammy)
 - **GPIO Controller**: Raspberry Pi 3B+ (Ubuntu 22.04 Jammy)
 - **Sensors**: RPLidar A1, 4-channel encoder sensors
-- **Motors**: 2x DIY 12V DC Encoder Gear Motors
+- **Motors**: 2x DIY 12V DC Encoder Gear Motors and 1 Micro Servo(Metal Gears)
 - **Power**: 12V battery → L298N Motor Driver
 - **Custom PCB** for integrated control
 
