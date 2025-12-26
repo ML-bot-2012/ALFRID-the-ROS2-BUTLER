@@ -393,7 +393,10 @@ Then Flip the whole Robot over and put one M3 screw in evry washer and finally, 
 - [ ] All wiring complete
 - [ ] Cable management done
 - [ ] All tests passed
-- [ ] Whole mechanical design is done
+- [ ] Whole mechanical design is done:
+
+![ALFRIDpic](https://github.com/user-attachments/assets/0696355d-2a9b-4526-81a6-ba3a7e977f99)
+
 
 ## Next Steps After Assembly
 1. Verify all connections with multimeter
