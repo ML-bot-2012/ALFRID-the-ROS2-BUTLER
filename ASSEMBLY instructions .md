@@ -82,9 +82,7 @@
 3. [Step 3]
 
 **Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
+- Phillips Head Screwdriver
 **Time Estimate:** [X minutes]
 
 ---
@@ -100,9 +98,7 @@ LEFT MOTOR → L298N OUT1 & OUT2
 RIGHT MOTOR → L298N OUT3 & OUT4
 
 **Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
+1. 
 
 **Tools Needed:**
 - [Tool 1]
