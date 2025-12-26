@@ -40,92 +40,30 @@
 - 3D printed base 
 
 **Instructions:**
+
+
 1.
 
 
 <img width="675" height="583" alt="6AED5293-7CC7-4317-8657-ADA64E5EFEC3" src="https://github.com/user-attachments/assets/acfad927-a521-409d-84ab-02a36d5873ca" />
 
 
-2. 
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
 
-**Time Estimate:** [X minutes]
+2.
 
----
 
-### Step 1.2: Attach Motor Mounts
-**Description:** [Your description here]
-**Components:**
-- [List components]
+<img width="1362" height="1302" alt="image" src="https://github.com/user-attachments/assets/36e53ca7-e0b5-4437-8a1f-76a1929a3763" />
 
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
+3.
+
+
+<img width="557" height="517" alt="Screenshot 2025-12-26 at 12 01 37 AM" src="https://github.com/user-attachments/assets/2915b2de-5c1a-4e7e-a3d9-fe289dafec87" />
+
+
 
 **Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
-
----
-
-### Step 1.3: Install Motors
-**Description:** [Your description here]
-**Components:**
-- 2x 12V DC Encoder Gear Motors
-- [List other components]
-
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
-
----
-
-### Step 1.4: Attach Wheels
-**Description:** [Your description here]
-**Components:**
-- 2x Wheels (65mm diameter)
-- [List other components]
-
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
-
----
-
-### Step 1.5: Install Caster Wheel
-**Description:** [Your description here]
-**Components:**
-- [List components]
-
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
+- Phillips Head Screwdriver for Large and Small screws (Not INCLUDED with Motors) 
+- Hexagonal Allen Key (INCLUDED with Motors)
 
 ---
 
@@ -135,8 +73,7 @@
 **Description:** [Your description here]
 **Components:**
 - L298N Dual H-Bridge
-- [List other components]
-
+- 
 **Instructions:**
 1. [Step 1]
 2. [Step 2]
