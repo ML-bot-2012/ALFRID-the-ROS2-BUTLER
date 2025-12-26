@@ -298,70 +298,30 @@ LR A → GPIO 4
 LR B → GPIO 8
 
 **Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
+1.
 
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
 
-**Time Estimate:** [X minutes]
+<img width="488" height="538" alt="image" src="https://github.com/user-attachments/assets/afa35087-4c98-4c17-ab25-c67eef963dfe" />
+
+Connect the wires to the designated pins 
+
 
 ---
 
 ## Part 6: Limit Switches & Servo Installation
 
-### Step 6.1: Mount Left Limit Switch
-**Description:** [Your description here]
+### Step 6.1: Mount Limit Switches 
+
 **Components:**
 - Left limit switch
-- 10kΩ pull-down resistor
-- [List other components]
-
-**Wiring:**
-3.3V → Limit Switch → GPIO 17
-GPIO 17 → 10kΩ resistor → GND
-
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
-
----
-
-### Step 6.2: Mount Right Limit Switch
-**Description:** [Your description here]
-**Components:**
 - Right limit switch
-- 10kΩ pull-down resistor
-- [List other components]
+ **Instructions:**
+1.
 
-**Wiring:**
-3.3V → Limit Switch → GPIO 27
-GPIO 27 → 10kΩ resistor → GND
-
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
-
----
+<img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/fafcaca6-6a07-45a4-972d-88aef340d9a5" />
 
 ### Step 6.3: Build Rack & Pinion Mechanism
-**Description:** [Your description here]
+
 **Components:**
 - Servo motor
 - Pinion gear
@@ -382,7 +342,6 @@ GPIO 27 → 10kΩ resistor → GND
 ---
 
 ### Step 6.4: Install Tray Assembly
-**Description:** [Your description here]
 **Components:**
 - Food dispenser tray
 - Rails
@@ -409,163 +368,20 @@ GPIO 21 → Servo PWM Signal
 GND → Servo Ground
 
 **Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
+1. <img width="259" height="194" alt="image" src="https://github.com/user-attachments/assets/1bc590b6-c036-44d0-a13c-c555f65cec6a" />
+Connect Yellow/White to GPIO 21
+Connect Red to 5V
+Connect Brown/Black to GND
 
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
 
-**Time Estimate:** [X minutes]
+
 
 ---
 
-## Part 7: Cable Management
-
-### Step 7.1: Organize Motor Wires
-**Description:** [Your description here]
-**Components:**
-- Zip ties
-- Cable organizer
-- [List other components]
-
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
-
----
-
-### Step 7.2: Route Power Cables
-**Description:** [Your description here]
-**Components:**
-- [List components]
-
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
-
----
-
-### Step 7.3: Bundle GPIO Wires
-**Description:** [Your description here]
-**Components:**
-- Jumper wires
-- Zip ties
-- [List other components]
-
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
-
----
-
-## Part 8: Final Testing & Calibration
-
-### Step 8.1: Power On Test
-**Description:** [Your description here]
-**Components:**
-- [List components]
-
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-**Tools Needed:**
-- Multimeter
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
-
----
-
-### Step 8.2: Motor Control Test
-**Description:** [Your description here]
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
-
----
-
-### Step 8.3: Encoder Calibration
-**Description:** [Your description here]
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
-
----
-
-### Step 8.4: Limit Switch Testing
-**Description:** [Your description here]
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
-
----
-
-### Step 8.5: Servo & Tray Testing
-**Description:** [Your description here]
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
-
----
-
-## Summary
 
 ### Total Assembly Time
-- Estimated: [X hours]
-- Actual: [Fill in after assembly]
+- Estimated: 12 HRS
+- Actual: 30 HRS non-stop
 
 ### Parts Checklist
 - [ ] Chassis assembled
@@ -582,7 +398,7 @@ GND → Servo Ground
 - [ ] All tests passed
 
 ### Known Issues
-[Add any issues encountered during assembly]
+
 
 ### Notes
 [Add any additional notes or modifications]
