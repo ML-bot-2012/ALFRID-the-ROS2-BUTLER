@@ -1,6 +1,6 @@
 # ALFRIDCL (Pi3B+) Complete GPIO Pinout
 
-## Motor Control Pins (CORRECTED)
+## Motor Control Pins 
 LEFT MOTOR:
 GPIO 5 = Forward (IN1)
 GPIO 25 = Backward (IN2)
