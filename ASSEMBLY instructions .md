@@ -170,11 +170,12 @@ YELLOW = ENCODER A
 
 ## Part 4: RPlidar Installation
 
-### Step 4.2: Attach RPLidar A1
+### Step 4.1: Attach RPLidar A1
 **Components:**
 - RPLidar A1
 - 3D Printed Mount
 - 4xM2 16mm screws
+- 4xM2 4mm screws
 **Instructions:**
 1. Line up the Lidar's Black standoffs to the Mount and screw it in via the M2 screws
 
@@ -204,17 +205,23 @@ YELLOW = ENCODER A
 - Pi5 protective case
 - Pi3B/3B+ protective case
 **Instructions:**
-1. 
+1.
 
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
+<img width="281" height="319" alt="Screenshot 2025-12-26 at 11 12 11 AM" src="https://github.com/user-attachments/assets/db2c3786-3f72-47ab-abb4-d8b7bba63be2" />
+
+2.
+
+
+<img width="355" height="336" alt="Screenshot 2025-12-26 at 11 16 05 AM" src="https://github.com/user-attachments/assets/00cf2896-55ef-429e-abab-4d2218b13c68" />
+
+3.
+
+
 
 ---
 
 
-### Step 5.3: Connect Motor Control Wires (Pi3B+ to L298N)
-**Description:** [Your description here]
+### Step 5.2: Connect Motor Control Wires (Pi3B+ to L298N)
 **Wiring:**
 GPIO 5 (Left FWD) → L298N IN1
 GPIO 25 (Left BCK) → L298N IN2
@@ -229,7 +236,7 @@ GPIO 22 (Right PWM) → L298N ENB
 <img width="275" height="183" alt="image" src="https://github.com/user-attachments/assets/ee02011d-ac99-4340-956d-36cf8d5bcb83" />
 
 
-### Step 5.4: Connect Encoder Wires (Pi3B+)
+### Step 5.3: Connect Encoder Wires (Pi3B+)
 **Description:** [Your description here]
 **Wiring:**
 RIGHT FRONT ENCODER:
@@ -266,7 +273,8 @@ Connect the wires to the designated pins
  **Instructions:**
 1.
 
-<img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/fafcaca6-6a07-45a4-972d-88aef340d9a5" />
+<img width="880" height="421" alt="Screenshot 2025-12-26 at 11 48 39 AM" src="https://github.com/user-attachments/assets/4d0f456b-10d7-4196-8752-0d2e45040b4e" />
+
 
 ### Step 6.2: Build Rack & Pinion Mechanism
 
@@ -318,8 +326,40 @@ Connect Yellow/White to GPIO 21
 Connect Red to 5V
 Connect Brown/Black to GND
 
+### Step 6.4: Connect Servo to Pi3B+
+
+**Wiring:**
+GPIO 21 → Servo PWM Signal
+5V → Servo Power
+GND → Servo Ground
+
+**Instructions:**
+1. <img width="259" height="194" alt="image" src="https://github.com/user-attachments/assets/1bc590b6-c036-44d0-a13c-c555f65cec6a" />
+Connect Yellow/White to GPIO 21
+Connect Red to 5V
+Connect Brown/Black to GND
 
 
+### Part 7: Connect All Chassis Frames together.
+
+### Step 7.1: Slide the Frames into one another
+**Components:**
+- 4xM3 10-15mm standoffs
+- 4xM3 washers
+- 4xM3 screws 4mm
+**Instructions:**
+1.
+
+<img width="1044" height="533" alt="Screenshot 2025-12-26 at 11 27 01 AM" src="https://github.com/user-attachments/assets/c4fec65b-a8bd-404a-b790-ec0466b9bb34" />
+
+2.
+
+
+<img width="832" height="626" alt="Screenshot 2025-12-26 at 11 41 16 AM" src="https://github.com/user-attachments/assets/142ac5e7-58e9-4edf-833b-51369cac38c1" />
+
+
+3. 
+Then Flip the whole Robot over and put one M3 screw in evry washer and finally, screw them into the standoffs, create a modular seperation method 
 
 ---
 
@@ -341,7 +381,7 @@ Connect Brown/Black to GND
 - [ ] All wiring complete
 - [ ] Cable management done
 - [ ] All tests passed
-
+- [ ] Whole mechanical design is done
 
 ## Next Steps After Assembly
 1. Verify all connections with multimeter
