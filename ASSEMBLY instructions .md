@@ -139,22 +139,32 @@ GPIO 22 = PWM Speed (ENB)
 ### Step 3.1: Connect Encoder Wires
 **Description:** [Your description here]
 **Wiring:**
-RF A → GPIO 11
-RF B → GPIO 12
-LR A → GPIO 4
-LR B → GPIO 8
-
+RIGHT FRONT ENCODER:
+GPIO 11 = A Channel
+GPIO 12 = B Channel
+LEFT REAR ENCODER:
+GPIO 4  = A Channel
+GPIO 8  = B Channel
+LEFT FRONT ENCODER:
+GPIO 7  = A Channel
+GPIO 10 = B Channel
+RIGHT REAR ENCODER:
+GPIO 15 = A Channel
+GPIO 14 = B Channel
 **Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
+1.
 
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
+<img width="972" height="1244" alt="image" src="https://github.com/user-attachments/assets/ffb08729-8977-49a9-a9f4-d6a11cd21145" />
+Connect To PCB or Pi in general
 
-**Time Estimate:** [X minutes]
+<img width="1500" height="1500" alt="image" src="https://github.com/user-attachments/assets/19bd5fa6-b4f8-4ac1-ac18-8621ab20cf72" />
 
+BLACK = ENCODER GND
+BLUE = ENCODER POWER(3.3v)
+RED = positive
+WHITE = negative
+GREEN = ENCODER B
+YELLOW = ENCODER A
 ---
 
 ## Part 4: RPLidar Installation
