@@ -9,17 +9,14 @@
 ## Tools Required
 - Screwdriver set (Phillips & flat head)
 - Wrench/socket set (M3, M4)
-- Zip ties
-- Hot glue gun (optional)
-- Soldering iron (optional)
+- Soldering iron 
 - Multimeter for testing
 
 ## Fasteners & Materials
 - M3 bolts and nuts
-- M4 bolts and nuts
-- Wood screws (25-30mm)
+- Brass Standoff Set
 - Double-sided tape or hot glue
-- Jumper wires (male-to-female)
+- 40 Jumper wires (male-to-female)
 - USB cables
 
 ---
@@ -70,12 +67,17 @@
 ## Part 2: Motor Driver & Power Installation
 
 ### Step 2.1: Mount L298N Motor Driver
-**Description:** [Your description here]
+
 **Components:**
 - L298N Dual H-Bridge
-- 
+- 2 M3 Phillips Head Screws
+- 2 M3 Nuts
 **Instructions:**
-1. [Step 1]
+1.
+<img width="416" height="397" alt="Screenshot 2025-12-26 at 12 27 16 AM" src="https://github.com/user-attachments/assets/8477c72a-f6eb-4a00-b1e9-ffd8c912cb51" />
+
+
+
 2. [Step 2]
 3. [Step 3]
 
