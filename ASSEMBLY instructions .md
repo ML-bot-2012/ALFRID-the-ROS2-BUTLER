@@ -78,99 +78,65 @@
 
 
 
-2. [Step 2]
-3. [Step 3]
+
 
 **Tools Needed:**
 - Phillips Head Screwdriver
-**Time Estimate:** [X minutes]
 
 ---
 
 ### Step 2.2: Connect Motor Wires to L298N
-**Description:** [Your description here]
 **Components:**
-- Motor wires
-- [List other components]
+- Motor wires (Male to Female)
+- 
 
 **Wiring:**
 LEFT MOTOR → L298N OUT1 & OUT2
 RIGHT MOTOR → L298N OUT3 & OUT4
+## Motor Control Pins 
+LEFT MOTOR:
+GPIO 5 = Forward (IN1)
+GPIO 25 = Backward (IN2)
+GPIO 6 = PWM Speed (ENA)
+RIGHT MOTOR:
+GPIO 23 = Forward (IN3)
+GPIO 24 = Backward (IN4)
+GPIO 22 = PWM Speed (ENB)
+
 
 **Instructions:**
-1. 
 
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
 
-**Time Estimate:** [X minutes]
+1. Connect All motors to Pi 3B+ 
+
+
+<img width="944" height="488" alt="image" src="https://github.com/user-attachments/assets/0185fda2-5e5e-445e-ac45-23e9717014e3" />
+
 
 ---
 
 ### Step 2.3: Install 12V Battery
-**Description:** [Your description here]
+
 **Components:**
-- 12V Battery
-- [List other components]
+-  KBT 12V Battery 70*55*20mm (L*W*T)
+- Top Chassis frame (3D printed)
 
 **Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
 
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
 
-**Time Estimate:** [X minutes]
+1.
+
+
+<img width="653" height="594" alt="Screenshot 2025-12-26 at 12 44 27 AM" src="https://github.com/user-attachments/assets/d73033ae-5f9e-4a23-9287-062097b1c103" />
+
+
 
 **⚠️ WARNING:** Always verify battery polarity before connecting!
 
----
-
-## Part 3: Encoder Installation
-
-### Step 3.1: Attach Encoder Wheels
-**Description:** [Your description here]
-**Components:**
-- Encoder wheels (660 CPR)
-- [List other components]
-
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
 
 ---
 
-### Step 3.2: Install Encoder Sensors (RF + LR)
-**Description:** [Your description here]
-**Components:**
-- Right Front encoder sensor
-- Left Rear encoder sensor
-- [List other components]
-
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
-
----
-
-### Step 3.3: Connect Encoder Wires
+### Step 3.1: Connect Encoder Wires
 **Description:** [Your description here]
 **Wiring:**
 RF A → GPIO 11
