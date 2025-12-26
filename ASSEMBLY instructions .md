@@ -11,12 +11,22 @@
 - Wrench/socket set (M3, M4)
 - Soldering iron 
 - Multimeter for testing
+- 3D Printer
 
 ## Fasteners & Materials
-- M3 bolts and nuts
+- M3 and M2 bolts and nuts Set (2 different sets)
 - Brass Standoff Set
-- Double-sided tape or hot glue
-- 40 Jumper wires (male-to-female)
+- Hot Glue Gun (optional)
+- 40-100 Jumper wires (male-to-female)
+- BreadBoard
+- Pi 3B
+- Pi 5
+- Monitor
+- Hdmi cable Pi 3B
+- Micro Hdmi Pi 5
+- Keyboard
+- Mouse
+- Rplidar
 - USB cables
 
 ---
@@ -25,7 +35,6 @@
 
 ### Step 1.1: Prepare Base Plate
 **Components:**
-- [List components]
 - 1 x Motor
 - 1 x Motor Base
 - 1 x Tire
@@ -67,7 +76,6 @@
 ## Part 2: Motor Driver & Power Installation
 
 ### Step 2.1: Mount L298N Motor Driver
-
 **Components:**
 - L298N Dual H-Bridge
 - 2 M3 Phillips Head Screws
@@ -116,7 +124,6 @@ GPIO 22 = PWM Speed (ENB)
 ---
 
 ### Step 2.3: Install 12V Battery
-
 **Components:**
 -  KBT 12V Battery 70*55*20mm (L*W*T)
 - Top Chassis frame (3D printed)
@@ -273,7 +280,6 @@ Connect the wires to the designated pins
 ## Part 6: Limit Switches & Servo Installation
 
 ### Step 6.1: Mount Limit Switches 
-
 **Components:**
 - Left limit switch
 - Right limit switch
@@ -284,7 +290,6 @@ Connect the wires to the designated pins
 
 
 ### Step 6.2: Build Rack & Pinion Mechanism
-
 **Components:**
 - Servo motor
 - Pinion gear
