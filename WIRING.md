@@ -53,3 +53,9 @@
 ## Pin Summary
 
 ### Pi3B+ GPIO Usage
+Motor Control:
+GPIO 5, 12, 17, 18, 25, 27 (6 pins)
+Encoders:
+GPIO 4, 7, 8, 10, 11, 14, 15 (7 pins)
+
+Property of 5KROBOTICS & MALHAR LABADE © 2025
