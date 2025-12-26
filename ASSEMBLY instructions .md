@@ -338,19 +338,6 @@ Connect Yellow/White to GPIO 21
 Connect Red to 5V
 Connect Brown/Black to GND
 
-### Step 6.4: Connect Servo to Pi3B+
-
-**Wiring:**
-GPIO 21 → Servo PWM Signal
-5V → Servo Power
-GND → Servo Ground
-
-**Instructions:**
-1. <img width="259" height="194" alt="image" src="https://github.com/user-attachments/assets/1bc590b6-c036-44d0-a13c-c555f65cec6a" />
-Connect Yellow/White to GPIO 21
-Connect Red to 5V
-Connect Brown/Black to GND
-
 
 ### Part 7: Connect All Chassis Frames together.
 
