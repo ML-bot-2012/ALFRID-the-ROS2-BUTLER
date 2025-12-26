@@ -137,7 +137,6 @@ GPIO 22 = PWM Speed (ENB)
 ---
 
 ### Step 3.1: Connect Encoder Wires
-**Description:** [Your description here]
 **Wiring:**
 RIGHT FRONT ENCODER:
 GPIO 11 = A Channel
@@ -168,9 +167,6 @@ YELLOW = ENCODER A
 ---
 
 ## Part 4: RPLidar Installation
-
-### Step 4.1: Mount RPLidar Bracket
-**Description:** [Your description here]
 **Components:**
 - RPLidar mounting bracket
 - [List other components]
@@ -228,12 +224,10 @@ YELLOW = ENCODER A
 
 ## Part 5: Electronics & Wiring
 
-### Step 5.1: Mount Pi5 Case
-**Description:** [Your description here]
+### Step 5.1: Mount Pi Cases
 **Components:**
 - Pi5 protective case
-- [List other components]
-
+- Pi3B/3B+ protective case
 **Instructions:**
 1. [Step 1]
 2. [Step 2]
@@ -243,28 +237,8 @@ YELLOW = ENCODER A
 - [Tool 1]
 - [Tool 2]
 
-**Time Estimate:** [X minutes]
-
 ---
 
-### Step 5.2: Mount Pi3B+ Case
-**Description:** [Your description here]
-**Components:**
-- Pi3B+ protective case
-- [List other components]
-
-**Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
-
-**Time Estimate:** [X minutes]
-
----
 
 ### Step 5.3: Connect Motor Control Wires (Pi3B+ to L298N)
 **Description:** [Your description here]
@@ -277,25 +251,26 @@ GPIO 24 (Right BCK) → L298N IN4
 GPIO 22 (Right PWM) → L298N ENB
 
 **Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
+1. Wire it up accordingly
 
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
+<img width="275" height="183" alt="image" src="https://github.com/user-attachments/assets/ee02011d-ac99-4340-956d-36cf8d5bcb83" />
 
-**Time Estimate:** [X minutes]
-
----
 
 ### Step 5.4: Connect Encoder Wires (Pi3B+)
 **Description:** [Your description here]
 **Wiring:**
-RF A → GPIO 11
-RF B → GPIO 12
-LR A → GPIO 4
-LR B → GPIO 8
+RIGHT FRONT ENCODER:
+GPIO 11 = A Channel
+GPIO 12 = B Channel
+LEFT REAR ENCODER:
+GPIO 4  = A Channel
+GPIO 8  = B Channel
+LEFT FRONT ENCODER:
+GPIO 7  = A Channel
+GPIO 10 = B Channel
+RIGHT REAR ENCODER:
+GPIO 15 = A Channel
+GPIO 14 = B Channel
 
 **Instructions:**
 1.
@@ -320,32 +295,36 @@ Connect the wires to the designated pins
 
 <img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/fafcaca6-6a07-45a4-972d-88aef340d9a5" />
 
-### Step 6.3: Build Rack & Pinion Mechanism
+### Step 6.2: Build Rack & Pinion Mechanism
 
 **Components:**
 - Servo motor
 - Pinion gear
 - Rack gear
-- [List other components]
+
 
 **Instructions:**
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
+1.  
 
-**Tools Needed:**
-- [Tool 1]
-- [Tool 2]
+<img width="981" height="374" alt="Screenshot 2025-12-26 at 10 23 08 AM" src="https://github.com/user-attachments/assets/e8169392-55ac-42a4-850b-b472697c1595" />
 
-**Time Estimate:** [X minutes]
+2.
+
+
+<img width="575" height="507" alt="Screenshot 2025-12-26 at 10 51 14 AM" src="https://github.com/user-attachments/assets/821b6852-40a9-4d1f-a73c-7c1be8d94a7b" />
+
+
+3.
+
+<img width="736" height="663" alt="Screenshot 2025-12-26 at 10 53 14 AM" src="https://github.com/user-attachments/assets/826cdbb9-8b6f-4700-9c14-81329a29faf4" />
+
 
 ---
 
-### Step 6.4: Install Tray Assembly
+### Step 6.3: Install Tray Assembly
 **Components:**
 - Food dispenser tray
-- Rails
-- [List other components]
+- Food Box
 
 **Instructions:**
 1. Slide the Box into the hole in the Chassis Top Frame
@@ -353,7 +332,7 @@ Connect the wires to the designated pins
 
 
 
-### Step 6.5: Connect Servo to Pi3B+
+### Step 6.4: Connect Servo to Pi3B+
 
 **Wiring:**
 GPIO 21 → Servo PWM Signal
@@ -390,33 +369,6 @@ Connect Brown/Black to GND
 - [ ] Cable management done
 - [ ] All tests passed
 
-### Known Issues
-
-
-### Notes
-[Add any additional notes or modifications]
-
----
-
-## Troubleshooting During Assembly
-
-### Motor Won't Turn
-- [Troubleshooting step 1]
-- [Troubleshooting step 2]
-
-### Encoder Not Reading
-- [Troubleshooting step 1]
-- [Troubleshooting step 2]
-
-### Servo Not Moving
-- [Troubleshooting step 1]
-- [Troubleshooting step 2]
-
-### Limit Switch Not Triggering
-- [Troubleshooting step 1]
-- [Troubleshooting step 2]
-
----
 
 ## Next Steps After Assembly
 1. Verify all connections with multimeter
