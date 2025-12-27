@@ -23,9 +23,50 @@ Built on ROS2 with dual Raspberry Pi architecture, ALFRID autonomously explores 
 ✅ Dual-encoder motor control for navigation
 ✅ Autonomous exploration and environment mapping
 ✅ Distributed ROS2 architecture (Pi5 + Pi3B+)
-✅ Custom PCB integration
+✅ Custom PCB integration 
 
 ## Installation
+### ‼️ Before running the next commands, visit this site https://cdimage.ubuntu.com/ubuntu/releases/jammy/release/ and 
+download the img.xz for Ubuntu 22.04
+
+<img width="1039" height="177" alt="Screenshot 2025-12-26 at 6 17 26 PM" src="https://github.com/user-attachments/assets/72f8d5e6-9bab-464b-9691-f5203932b5cc" /> 
+
+Click the blue text your PC should Download the img.xz
+
+Then Dowload the Raspberry Pi Imager for your operating system 
+
+<img width="2560" height="990" alt="image" src="https://github.com/user-attachments/assets/7de1c5c3-f82e-4f3c-a855-f0d4eb10c7bb" />
+
+Then choose your devices, in our case the Pi5 and Pi3 
+<img width="655" height="425" alt="Screenshot 2025-12-26 at 6 22 24 PM" src="https://github.com/user-attachments/assets/bd634ea9-0534-43c9-9bb9-4b239f4974f2" />
+
+Choose your operating system by scrolling all the way down and choose a custom one, or our img.xz file we just downloaded
+
+
+<img width="1338" height="768" alt="image" src="https://github.com/user-attachments/assets/90665ce6-b1b2-47d4-9453-31e1653f0752" />
+
+Then Slide your Pi3 sd card in and write it, please finish the authentication process then it will proceed to write the SD card
+ It should Not ask for Customization or Wifi
+
+ <img width="1416" height="1032" alt="image" src="https://github.com/user-attachments/assets/63d3af2e-f070-4f32-b4d8-b9e9ef3d04b5" />
+
+ Then Repeat this process for the Pi5, by just going back to the start where we clicker Pi3 and click Pi5
+
+ <img width="1334" height="868" alt="image" src="https://github.com/user-attachments/assets/10f1a871-0672-461a-9f43-f74cbb04bd2d" />
+
+ And do it all over again.
+
+ After both sd cards are written, please slide them into the designated sd card slot on the bottom of the Raspberry Pi 
+
+ <img width="275" height="183" alt="image" src="https://github.com/user-attachments/assets/217b3200-46ac-4b40-8bbc-2fbe32bdc1eb" />
+
+ For the Pi3 and Pi5(Pi5 needs Micro Hdmi wire) connect the Hdmi wire to a monitor and a keyboard and mouse, on startup it will ask you your Hostnam, Wifi etc.
+
+
+ <img width="467" height="233" alt="Screenshot 2025-12-26 at 6 32 50 PM" src="https://github.com/user-attachments/assets/e3a758e3-97e1-4d1a-b048-96521052ff51" />
+
+and then download these very packages down below 👇
+
 ```bash
 cd ~/Downloads
 wget https://github.com/ML-bot-2012/ALFRID-the-ROS2-BUTLER/releases/download/butler/alfrid_slam-1.0.0-py3-none-any.whl
