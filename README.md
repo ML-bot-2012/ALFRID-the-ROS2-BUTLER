@@ -27,11 +27,10 @@ Built on ROS2 with dual Raspberry Pi architecture, ALFRID autonomously explores 
 
 ## Installation
 ```bash
-# Pi5 (ALFRIDROS)
-pip3 install https://github.com/ML-bot-2012/ALFRID/releases/download/v1.0.0/alfrid-slam.whl
-
-# Pi3B+ (ALFRIDCL)
-pip3 install https://github.com/ML-bot-2012/ALFRID/releases/download/v1.0.0/alfrid-gpio.whl
+#Pi5
+pip3 install https://github.com/ML-bot-2012/ALFRID/releases/download/v1.0.0/alfrid_slam-1.0.0-py3-none-any.whl
+#Pi3B
+pip3 install https://github.com/ML-bot-2012/ALFRID/releases/download/v1.0.0/alfrid_gpio-1.0.0-py3-none-any.whl
 ```
 
 ## Quick Start
