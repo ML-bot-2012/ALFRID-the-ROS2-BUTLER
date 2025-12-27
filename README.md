@@ -60,7 +60,7 @@ Then Slide your Pi3 sd card in and write it, please finish the authentication pr
 
  <img width="275" height="183" alt="image" src="https://github.com/user-attachments/assets/217b3200-46ac-4b40-8bbc-2fbe32bdc1eb" />
 
- For the Pi3 and Pi5(Pi5 needs Micro Hdmi wire) connect the Hdmi wire to a monitor and a keyboard and mouse, on startup it will ask you your Hostnam, Wifi etc.
+ For the Pi3 and Pi5(Pi5 needs Micro Hdmi wire) connect the Hdmi wire to a monitor and a keyboard and mouse, on startup it will ask you your Hostname, Wifi, etc.
 
 
  <img width="467" height="233" alt="Screenshot 2025-12-26 at 6 32 50 PM" src="https://github.com/user-attachments/assets/e3a758e3-97e1-4d1a-b048-96521052ff51" />
