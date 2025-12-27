@@ -11,8 +11,8 @@ Built on ROS2 with dual Raspberry Pi architecture, ALFRID autonomously explores 
 - **Sensors**: RPLidar A1, 4-channel encoder sensors
 - **Motors**: 2x DIY 12V DC Encoder Gear Motors and 1 Micro Servo(Metal Gears)
 - **Power**: 12V battery → L298N Motor Driver
-- **Custom PCB** for integrated control
-
+- **Custom PCB** for integrated control **(you could just use a breadboard and jumper cables, and if you need the PCB, just give a comment)
+- 
 ## Software Stack
 - **Pi5**: ROS2 Jazzy Jalisco - SLAM Toolbox, Nav2, real-time mapping
 - **Pi3B+**: ROS2 Humble Hawksbill - motor control, encoder odometry
