@@ -39,10 +39,11 @@ ssh malharlabade@192.168.86.226 "source /opt/ros/humble/setup.bash && export ROS
 source /opt/ros/jazzy/setup.bash && export ROS_DOMAIN_ID=0 && export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp && (
   nohup ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 map odom > /tmp/tf1.log 2>&1 &
   nohup ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 odom base_link > /tmp/tf2.log 2>&1 &
-  nohup ros2 run tf2_ros static_transform_publisher -0.05 0.1 0.0325 0 0 0 base_link left_wheel > /tmp/tf3.log 2>&1 &
-  nohup ros2 run tf2_ros static_transform_publisher -0.05 -0.1 0.0325 0 0 0 base_link right_wheel > /tmp/tf4.log 2>&1 &
-  nohup ros2 run tf2_ros static_transform_publisher 0.08 0 0.02 0 0 0 base_link caster_wheel > /tmp/tf5.log 2>&1 &
-  nohup ros2 run tf2_ros static_transform_publisher 0.08 0 0.2 0 0 0 base_link laser > /tmp/tf6.log 2>&1 &
+  nohup ros2 run tf2_ros static_transform_publisher -0.05 0.1 0.0325 0 0 0 base_link left_front_wheel > /tmp/tf3.log 2>&1 &
+  nohup ros2 run tf2_ros static_transform_publisher -0.05 -0.1 0.0325 0 0 0 base_link right_front_wheel > /tmp/tf4.log 2>&1 &
+  nohup ros2 run tf2_ros static_transform_publisher -0.05 0.1 0.0325 0 0 0 base_link left_rear_wheel > /tmp/tf5.log 2>&1 &
+  nohup ros2 run tf2_ros static_transform_publisher -0.05 -0.1 0.0325 0 0 0 base_link right_rear_wheel > /tmp/tf6.log 2>&1 &
+  nohup ros2 run tf2_ros static_transform_publisher 0.08 0 0.2 0 0 0 base_link laser > /tmp/tf7.log 2>&1 &
   sleep 1
   nohup ros2 run rplidar_ros rplidar_composition --ros-args -p serial_port:=/dev/ttyUSB0 -p frame_id:=laser > /tmp/rplidar.log 2>&1 &
   sleep 2
