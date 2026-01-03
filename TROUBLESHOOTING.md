@@ -275,7 +275,7 @@ These are harmless warnings. To reduce them:
    - `map → odom`
    - `odom → base_link`
    - `base_link → laser`
-   - `base_link → left_wheel`, `right_wheel`, `caster_wheel`
+   - `base_link → left_front_wheel`, `right_front_wheel`, `left_rear_wheel`, `right_rear_wheel`
 
 3. **If missing, restart static transforms:**
    ```bash
