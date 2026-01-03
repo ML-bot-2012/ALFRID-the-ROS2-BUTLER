@@ -1,6 +1,8 @@
 # ALFRID - Autonomous SLAM Robot Butler BY 5KROBOTICS and MALHAR LABADE
 ALFRID is an autonomous SLAM robot butler inspired by Batman's faithful servant. 
 ```
+
+Property of 5KROBOTICS & MALHAR LABADE
     _      _       _____   ____    ___   ____     
    / \    | |     |  ___| |  _ \  |_ _| |  _ \    
   / _ \   | |     | |_    | |_) |  | |  | | | |   
