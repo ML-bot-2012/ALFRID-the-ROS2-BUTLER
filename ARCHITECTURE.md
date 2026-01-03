@@ -158,8 +158,11 @@ nav2_bringup::navigation_launch.py
 
 tf2_ros::static_transform_publisher
   ├─ Publishes: map ─► odom ─► base_link
+  ├─           base_link ─► left_front_wheel
+  ├─           base_link ─► right_front_wheel
+  ├─           base_link ─► left_rear_wheel
+  ├─           base_link ─► right_rear_wheel
   ├─           base_link ─► laser
-  ├─           base_link ─► wheels
   └─ Role: Fixed transform tree
 ```
 
@@ -386,6 +389,26 @@ Global Costmap (200m × 200m)
 Local Costmap (3m × 3m rolling window)
 ├─ Obstacle Layer: Immediate obstacles
 └─ Inflation Layer: Close-range safety
+```
+
+---
+
+**Wheel Configuration (4-wheel Differential Drive):**
+
+```
+Left Front Wheel (LF)      Right Front Wheel (RF)
+        ●                           ●
+        
+        ╔═══════════════════════════╗
+        ║   ALFRID CHASSIS          ║
+        ║   (Base Link)             ║
+        ╚═══════════════════════════╝
+        
+        ●                           ●
+Left Rear Wheel (LR)       Right Rear Wheel (RR)
+
+All 4 wheels: 0.0325m radius, 660 CPR encoders
+Motor control: 2 DC motors via L298N driver
 ```
 
 ---
