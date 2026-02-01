@@ -378,9 +378,9 @@ ros2 topic echo /test
 ## 🚀 Next Steps
 
 1. ✅ Follow this **README_FIXED.md** to install
-2. ✅ Go to **[INSTALLATION_STEPS.md](INSTALLATION_STEPS.md)** for detailed help
-3. ✅ Go to **[QUICKSTART_ENHANCED.md](QUICKSTART_ENHANCED.md)** to run ALFRID
-4. ✅ Check **[TROUBLESHOOTING_ENHANCED.md](TROUBLESHOOTING_ENHANCED.md)** if issues arise
+2. ✅ Go to **[INSTALLATION_STEPS.md](INSTALLATION STEPS.md)** for detailed help
+3. ✅ Go to **[QUICKSTART_ENHANCED.md](QUICKSTART.md)** to run ALFRID
+4. ✅ Check **[TROUBLESHOOTING_ENHANCED.md](TROUBLESHOOTING.md)** if issues arise
 
 ---
 
