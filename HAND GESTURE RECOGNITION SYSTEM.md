@@ -2,13 +2,13 @@
 
 **Property of 5KROBOTICS & MALHAR LABADE**
 
-Complete three-app camera system for real-time hand gesture detection with AI acceleration ready.
+Complete two-app camera system for real-time hand gesture detection with AI acceleration ready.
 
 ---
 
 ## 🎥 System Overview
 
-BUTLER uses a **three-app camera architecture**:
+BUTLER uses a **two-app camera architecture**:
 
 ```
 USB Camera (1280x960 @ 30fps)
@@ -20,16 +20,14 @@ USB Camera (1280x960 @ 30fps)
 └─────────────────────────────┘
     ↓
 ┌──────────────────────────────────────────┐
-│  3 Independent Applications:             │
+│  2 Independent Applications:             │
 ├──────────────────────────────────────────┤
 │ 1. ligament.py                          │ ← Bone measurement
 │ 2. butler_camera_display.py             │ ← Gesture visualization
-│ 3. butler_camera_stream.py              │ ← HTTP streaming
 └──────────────────────────────────────────┘
     ↓
 ├─→ ROS2 /cmd_vel (distance navigator)
-├─→ VNC Display (real-time visualization)
-└─→ HTTP Stream (remote monitoring)
+└─→ VNC Display (real-time visualization)
 ```
 
 ### Performance Comparison
@@ -252,8 +250,6 @@ DISPLAY=:1 python3 ~/ligament.py
 **Purpose**: Real-time gesture visualization with colored borders  
 **Platform**: ALFRIDROS (Pi5)
 
-### Source Code
-
 ```python
 #!/usr/bin/env python3
 
@@ -379,89 +375,6 @@ DISPLAY=:1 python3 ~/butler_camera_display.py
 
 ---
 
-## 💻 Application 3: butler_camera_stream.py
-
-**Location**: `src/butler_camera/butler_camera_stream.py`  
-**Purpose**: HTTP video streaming for remote monitoring  
-**Platform**: ALFRIDROS (Pi5)
-
-### Source Code
-
-```python
-#!/usr/bin/env python3
-
-from flask import Flask, render_template_string, Response
-import cv2
-import threading
-
-app = Flask(__name__)
-
-class CameraStream:
-    def __init__(self):
-        self.cap = cv2.VideoCapture(0)
-        self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
-        self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 960)
-        self.cap.set(cv2.CAP_PROP_FPS, 30)
-        
-        self.frame = None
-        self.lock = threading.Lock()
-    
-    def get_frame(self):
-        ret, frame = self.cap.read()
-        if ret:
-            ret, buffer = cv2.imencode('.jpg', frame)
-            return buffer.tobytes()
-        return None
-
-camera = CameraStream()
-
-def gen_frames():
-    while True:
-        frame = camera.get_frame()
-        if frame:
-            yield (b'--frame\r\n'
-                  b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
-
-@app.route('/')
-def index():
-    return render_template_string('''
-    <html>
-    <head>
-        <title>BUTLER Camera Stream</title>
-    </head>
-    <body>
-        <h1>BUTLER Camera Stream</h1>
-        <img src="{{ url_for('video_feed') }}" width="640">
-    </body>
-    </html>
-    ''')
-
-@app.route('/video_feed')
-def video_feed():
-    return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=False)
-```
-
-### Usage
-
-```bash
-# On ALFRIDROS (any terminal):
-python3 ~/butler_camera_stream.py
-
-# Access from any machine on network:
-# http://ALFRIDROS:5000
-
-# Features:
-# - Real-time MJPEG streaming
-# - Low latency
-# - Works with any browser
-# - No authentication needed
-```
-
----
-
 ## 🎯 Integration with ROS2
 
 ### Connected to Distance Navigator
@@ -581,6 +494,192 @@ vncserver :1 -geometry 1024x768
 
 ---
 
+## 🖥️ Tiger VNC Remote Display Access
+
+### Why Use Tiger VNC?
+
+**Direct advantage over SSH:**
+- ✅ See GUI applications (OpenCV windows, gesture visualization)
+- ✅ Real-time video feed display
+- ✅ Interactive desktop environment
+- ✅ Works from Mac, Windows, Linux
+
+**VS SSH Terminal:**
+- ❌ SSH can't display GUI apps
+- ❌ No way to see camera output
+- ❌ Limited to command-line only
+
+### Setup Tiger VNC (One Time)
+
+**On ALFRIDROS (Pi5):**
+
+```bash
+# Install Tiger VNC and desktop environment:
+sudo apt-get install -y tigervnc-server xfce4 xfce4-goodies
+
+# Start VNC server:
+vncserver :1 -geometry 1024x768 -depth 24
+
+# When prompted:
+# Enter VNC password (different from system password)
+# Confirm password
+# View-only password? → No
+
+# Kill and restart to apply settings:
+vncserver -kill :1
+vncserver :1 -geometry 1024x768 -depth 24
+
+# Verify it's running:
+ps aux | grep vncserver
+# Should show vncserver process
+```
+
+### Connect from Your Mac/PC
+
+**Step 1: Download VNC Viewer**
+
+Visit: [RealVNC - VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/)
+
+- 🍎 **macOS**: Download `.dmg` file → Open → Drag to Applications
+- 🪟 **Windows**: Download `.exe` → Run installer
+- 🐧 **Linux**: `sudo apt-get install tigervnc-viewer`
+
+**Step 2: Connect to ALFRIDROS**
+
+```bash
+# Option 1: Open VNC Viewer app
+# Address bar: ALFRIDROS:5901
+# Enter VNC password
+# Click "Connect"
+
+# Option 2: Command line (macOS/Linux):
+vncviewer ALFRIDROS:5901
+# Enter password when prompted
+
+# Option 3: Use IP address instead:
+vncviewer 192.168.1.100:5901
+# (replace with actual IP from: ssh ubuntu@ALFRIDROS; hostname -I)
+```
+
+**Step 3: You Should See**
+- XFCE desktop environment
+- Taskbar at top/bottom
+- Ready to launch applications!
+
+### Run Hand Gesture Display via VNC
+
+**Now in your VNC window, open a terminal:**
+
+```bash
+# Right-click on desktop → Open Terminal
+
+# Set DISPLAY variable:
+export DISPLAY=:1
+
+# Run gesture display:
+python3 ~/butler_camera_display.py
+
+# You should see:
+# - Camera feed from USB webcam
+# - Real-time hand detection
+# - GREEN border when hand OPEN
+# - RED border when hand FIST
+# - Large status text
+```
+
+### VNC Display Tips
+
+```bash
+# For better performance, reduce window size:
+vncserver :1 -geometry 800x600 -depth 16
+
+# For maximum quality (slower):
+vncserver :1 -geometry 1280x960 -depth 24
+
+# Kill VNC cleanly:
+vncserver -kill :1
+
+# Check VNC logs:
+cat ~/.vnc/ALFRIDROS:1.log
+
+# If VNC port already in use:
+# Kill any existing VNC:
+pkill -f vncserver
+# Then restart
+```
+
+### Troubleshooting VNC
+
+**Can't connect:**
+
+```bash
+# 1. Verify VNC is running on Pi:
+ssh ubuntu@ALFRIDROS
+ps aux | grep vncserver
+# If no process, restart:
+vncserver :1 -geometry 1024x768 -depth 24
+
+# 2. Check firewall:
+sudo ufw status
+# If active, allow VNC:
+sudo ufw allow 5901/tcp
+
+# 3. Use IP instead of hostname:
+# Get IP: ssh ubuntu@ALFRIDROS; hostname -I
+vncviewer 192.168.1.100:5901
+
+# 4. Try different VNC port:
+vncserver :2 -geometry 1024x768 -depth 24
+vncviewer ALFRIDROS:5902
+```
+
+**VNC window black/frozen:**
+
+```bash
+# On ALFRIDROS, restart X server:
+vncserver -kill :1
+sleep 2
+vncserver :1 -geometry 1024x768 -depth 24
+
+# On your Mac/PC:
+# Disconnect and reconnect VNC Viewer
+```
+
+**Want to run gesture display at VNC startup:**
+
+```bash
+# Edit ~/.vnc/xstartup on ALFRIDROS:
+nano ~/.vnc/xstartup
+
+# Add at end before "exec startxfce4":
+python3 ~/butler_camera_display.py &
+
+# Save and restart VNC:
+vncserver -kill :1
+vncserver :1 -geometry 1024x768 -depth 24
+```
+
+---
+
+## 🔗 Full VNC + Gesture Workflow
+
+```bash
+# On your Mac/PC:
+# 1. Open VNC Viewer
+# 2. Connect to: ALFRIDROS:5901
+# 3. Enter VNC password
+# 4. In VNC window, open terminal
+# 5. Run: export DISPLAY=:1
+# 6. Run: python3 ~/butler_camera_display.py
+# 7. Watch gesture detection in real-time!
+
+# Alternative: SSH tunnel (if firewall blocks 5901):
+ssh -L 5901:localhost:5901 ubuntu@ALFRIDROS
+# Then VNC to: localhost:5901
+```
+
+---
+
 ## ✅ Quick Test Procedure
 
 ```bash
@@ -601,11 +700,6 @@ EOF
 # 3. Test butler_camera_display.py:
 # DISPLAY=:1 python3 ~/butler_camera_display.py
 # Should show green/red border based on gesture
-
-# 4. Test HTTP stream:
-# python3 ~/butler_camera_stream.py
-# Visit: http://ALFRIDROS:5000
-# Should show live video
 ```
 
 ---
