@@ -94,9 +94,7 @@ pip3 install alfrid_slam-1.0.0-py3-none-any.whl
 pip3 install alfrid_gpio-1.0.0-py3-none-any.whl
 ```
 
-## Quick Start
-**Pi5**: `ros2 launch slam_toolbox online_async_launch.py`
-**Pi3B+**: `ros2 launch butler_gpio pi3b_launch.py`
+View Installation.md for steps for installing all of the libraries and needed software
 
 ---
 Property of 5KROBOTICS & MALHAR LABADE
