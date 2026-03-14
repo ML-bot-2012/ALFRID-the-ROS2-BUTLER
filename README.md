@@ -80,6 +80,6 @@ Boot system → Watch blue cylinder in RViz → Drive with keyboard → See real
 
 ---
 
-**Built for Funding the Commons SF: Intelligence at the Frontier (March 14-15, 2026)**
+
 
 Property of ML-bot-2012 & Malhar Labade
